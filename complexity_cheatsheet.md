@@ -33,23 +33,23 @@ Set不涉及两个set的运算，复杂度基本上都是O(1)，例如`remove`/`
 
 |  code |example|  worst-case time  | note |   
 |---|---|---|---|
-Length        | len(s)       | O(1)	     ||
-Add           | s.add(5)     | O(1)	     ||
-Containment   | x in/not in s| O(1)	     | compare to list/tuple - O(N)|
-Remove        | s.remove(5)  | O(1)	     | compare to list/tuple - O(N)|
-Discard       | s.discard(5) | O(1)	     | discard是不管有没有都能discard，remove的话，如果元素不存在则会报错|
-Pop           | s.pop()      | O(1)	     | compare to list - O(N)|
-Clear         | s.clear()    | O(1)	     | similar to s = set()|
-Construction  | set(...)     | len(...)      ||
-check ==, !=  | s != t       | O(min(len(s),lent(t))|
-<=/<          | `s <= t` or `s.issubset(t)`       | O(len(s1))    | issubset|
->=/>          | s >= t       | O(len(s2))    | issuperset s <= t == t >= s|
-Union         | `s | t` or `s.union(t)`        | O(len(s)+len(t))|
-Intersection  | `s & t` or `s.intersection(t)`       | O(min(len(s),lent(t))|
-Difference    | `s - t` or `s.difference(t)`     | O(len(t))     ||
-Symmetric Diff| s ^ t        | O(len(s))     ||
-Iteration     | for v in s:  | O(N)          ||
-Copy          | s.copy()     | O(N)	     || 
+|Length        | len(s)       | O(1)	     ||
+|Add           | s.add(5)     | O(1)	     ||
+|Containment   | x in/not in s| O(1)	     | compare to list/tuple - O(N)|
+|Remove        | s.remove(5)  | O(1)	     | compare to list/tuple - O(N)|
+|Discard       | s.discard(5) | O(1)	     | discard是不管有没有都能discard，remove的话，如果元素不存在则会报错|
+|Pop           | s.pop()      | O(1)	     | compare to list - O(N)|
+|Clear         | s.clear()    | O(1)	     | similar to s = set()|
+|Construction  | set(...)     | len(...)      ||
+|check ==, !=  | s != t       | O(min(len(s),lent(t))|
+|<=/<          | `s <= t` or `s.issubset(t)`       | O(len(s1))    | issubset|
+|>=/>          | s >= t       | O(len(s2))    | issuperset s <= t == t >= s|
+|Union         | `s | t` or `s.union(t)`        | O(len(s)+len(t))|
+|Intersection  | `s & t` or `s.intersection(t)`       | O(min(len(s),lent(t))|
+|Difference    | `s - t` or `s.difference(t)`     | O(len(t))     ||
+|Symmetric Diff| s ^ t        | O(len(s))     ||
+|Iteration     | for v in s:  | O(N)          ||
+|Copy          | s.copy()     | O(N)	     || 
 
 
 
