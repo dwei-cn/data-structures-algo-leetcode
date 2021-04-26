@@ -16,7 +16,7 @@ The following Python list operations operate on a subset of the elements, but st
 |`a.pop(i)`   | `n-i`  | 按照index位置删除元素，索引元素的步骤是O(1)，但是删除之后所有的item会移动|
 |  `del a[i]` |  `n-i` |   |
 | `del [i:j]`  |  `n-i` |   |
-| `a.remove(x)`  | `n`  |  同样的，remove元素后，所有后面的元素会移动 |
+| `a.remove(x)`  | `n`  |  每次也是删除first occurance。同样的，remove元素后，所有后面的元素会移动 |
 | `a.index(x)`  | `n`   |  |
 | `x in a`  | `n`   | `set`和`dict`的in运算复杂度为O(1) |
 | `max(a)` or `min(a)`  | `n`   |  |
