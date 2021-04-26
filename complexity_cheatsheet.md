@@ -20,7 +20,8 @@ The following Python list operations operate on a subset of the elements, but st
 | `a.index(x)`  | `n`   |  |
 | `x in a`  | `n`   | `set`和`dict`的in运算复杂度为O(1) |
 | `max(a)` or `min(a)`  | `n`   |  |
-| `count` or `remove` or`reverse`   | `n`   |注意`len`是O(1), `count`是count某个元素。remove和index都是返回的first occurrence |
+| `len(a)`  | `1`   |  |
+| `count` or `remove` or`reverse`   | `n`   |注意`len`是O(1), `count`是count某个元素的频率。remove和index都是返回的first occurrence |
 
 
 **Note**: `a.append(x)` takes constant amortized time, even though the worst-case time is linear.
